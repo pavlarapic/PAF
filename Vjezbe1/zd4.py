@@ -1,4 +1,4 @@
-
+#program isto radi samo za brojeve iz N
 
 def pravac(x1,y1,x2,y2):
     if x1 == x2: #ovo je slučaj ako je vertikalan kao i 'gateway' za dijeljenje s 0 u nastavku koda
