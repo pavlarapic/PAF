@@ -11,20 +11,20 @@ xy=x*y
 x_sq=x**2
 y_sq=y**2
 
-avg_xy = arithm(xy).aritm_sredina()
-avg_x2 = arithm(x_sq).aritm_sredina()
-avg_y2 = arithm(y_sq).aritm_sredina()
-a = avg_xy / avg_x2
-n = len(x)
-sigma_a = np.sqrt((1/n) * (avg_y2 / avg_x2 - a**2))
+avg_xy=arithm(xy).aritm_sredina()
+avg_x2=arithm(x_sq).aritm_sredina()
+avg_y2=arithm(y_sq).aritm_sredina()
+a=avg_xy/avg_x2
+n=len(x)
+sigma_a=np.sqrt((1/n)*(avg_y2/avg_x2-a**2))
 print(f"Modul torzije Dt iznosi: {a:.5f} Nm/rad")
 print(f"Pogreška modula torzije iznosi: {sigma_a:.5f}")
 
 import matplotlib.pyplot as plt
-plt.scatter(x, y, color='red', label='Mjerenja')
-plt.plot(x, a * x, label=f'Regresija: M = {a:.5f} * phi')
-plt.xlabel('phi [rad]')
-plt.ylabel('M [Nm]')
+plt.scatter(x,y,color='red',label='Mjerenja')
+plt.plot(x,a*x,label=f'Regresija: M={a:.5f}*phi')
+plt.xlabel('phi/rad]')
+plt.ylabel('M/Nm')
 plt.legend()
 plt.grid(True)
 plt.show()
