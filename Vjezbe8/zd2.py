@@ -41,7 +41,7 @@ print(f"Izračunata duljina l: {l_fit_120:.5f} greska {err_l_120:.5f} m")
 print(f"Relativna pogreška mjerenja: {rel_err_120:.4f} %")
 
 print(f"Teorijska duljina 2: {L2_teorijski:.3f} m")
-print(f"Izračunata duljina l: {l_fit_240:.4f} \u00b1 {err_l_240:.4f} m")
+print(f"Izračunata duljina l: {l_fit_240:.4f} greska {err_l_240:.4f} m")
 
 
 def calc_period(theta_rad, l_duljina):
