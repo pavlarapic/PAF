@@ -21,8 +21,8 @@ def histogram(podatci,k):
                     freq[i]+=1
                     break
     for i in range(k):
-        print(f"[{rubovi[i]:.2f},{rubovi[i+1]:.2f}]: {freq[i]}")
-        return rubovi,freq
+        print(f"rubovi: [{rubovi[i]:.2f},{rubovi[i+1]:.2f}] frekvencija: {freq[i]}")
+    return rubovi,freq
     
 k_razreda=10
 
